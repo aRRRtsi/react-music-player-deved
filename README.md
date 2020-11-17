@@ -8,6 +8,6 @@ Trying to learn Reactjs and Nextjs
 
 ### `git cheat sheet`
 
-git add .
-git commit -m "Headline" -m "Description"
+git add .  
+git commit -m "Headline" -m "Description". 
 git push -u origin main
