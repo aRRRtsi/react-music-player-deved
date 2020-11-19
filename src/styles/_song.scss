@@ -1,5 +1,5 @@
 .song-container {
-  height: 70vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +10,7 @@
   .song-name {
     font-size: 3em;
     font-weight: 600;
-    padding: 1em;
+    padding: 0.5em;
   }
   .song-artist {
     font-size: 2em;

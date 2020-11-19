@@ -1,3 +1,114 @@
 .player-container {
-  background-color: lightblue;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .time-controller {
+    display: flex;
+    width: 50vw;
+    padding: 1em 0;
+
+    input[type='range'] {
+      width: 100%;
+      padding: 1em 0;
+      -webkit-appearance: none;
+      width: 100%;
+    }
+    input[type='range']:focus {
+      outline: none;
+    }
+    input[type='range']::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 24px;
+      cursor: pointer;
+      animate: 0.2s;
+      box-shadow: 0px 0px 0px #000000;
+      background: #7aa994;
+      border-radius: 15px;
+      border: 0px solid #000000;
+    }
+    input[type='range']::-webkit-slider-thumb {
+      box-shadow: 0px 0px 0px #000000;
+      border: 0px solid #000000;
+      height: 15px;
+      width: 15px;
+      border-radius: 10px;
+      background: #ffffff;
+      cursor: pointer;
+      -webkit-appearance: none;
+      margin-top: 4.5px;
+    }
+    input[type='range']:focus::-webkit-slider-runnable-track {
+      background: #7aa994;
+    }
+    input[type='range']::-moz-range-track {
+      width: 100%;
+      height: 24px;
+      cursor: pointer;
+      animate: 0.2s;
+      box-shadow: 0px 0px 0px #000000;
+      background: #7aa994;
+      border-radius: 15px;
+      border: 0px solid #000000;
+    }
+    input[type='range']::-moz-range-thumb {
+      box-shadow: 0px 0px 0px #000000;
+      border: 0px solid #000000;
+      height: 15px;
+      width: 15px;
+      border-radius: 10px;
+      background: #ffffff;
+      cursor: pointer;
+    }
+    input[type='range']::-ms-track {
+      width: 100%;
+      height: 24px;
+      cursor: pointer;
+      animate: 0.2s;
+      background: transparent;
+      border-color: transparent;
+      color: transparent;
+    }
+    input[type='range']::-ms-fill-lower {
+      background: #7aa994;
+      border: 0px solid #000000;
+      border-radius: 30px;
+      box-shadow: 0px 0px 0px #000000;
+    }
+    input[type='range']::-ms-fill-upper {
+      background: #7aa994;
+      border: 0px solid #000000;
+      border-radius: 30px;
+      box-shadow: 0px 0px 0px #000000;
+    }
+    input[type='range']::-ms-thumb {
+      margin-top: 1px;
+      box-shadow: 0px 0px 0px #000000;
+      border: 0px solid #000000;
+      height: 15px;
+      width: 15px;
+      border-radius: 10px;
+      background: #ffffff;
+      cursor: pointer;
+    }
+    input[type='range']:focus::-ms-fill-lower {
+      background: #7aa994;
+    }
+    input[type='range']:focus::-ms-fill-upper {
+      background: #7aa994;
+    }
+
+    p {
+      padding: 1em;
+    }
+  }
+  .play-controller {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    width: 16vw;
+    color: #7aa994;
+  }
 }

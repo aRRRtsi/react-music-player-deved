@@ -10,24 +10,24 @@ const Player = () => {
     <div className='player-container'>
       <div className='time-controller'>
         <p>Start time</p>
-        <input type='range' name='' id='' />
+        <input type='range' />
         <p>End time</p>
       </div>
       <div className='play-controller'>
         <FontAwesomeIcon
-          className='play-controller-previous'
+          className='icon play-controller-previous'
           icon={faChevronCircleLeft}
-          size='2x'
+          size='3x'
         />
         <FontAwesomeIcon
-          className='play-controller-play'
+          className='icon play-controller-play'
           icon={faPlayCircle}
-          size='2x'
+          size='3x'
         />
         <FontAwesomeIcon
-          className='play-controller-next'
+          className='icon play-controller-next'
           icon={faChevronCircleRight}
-          size='2x'
+          size='3x'
         />
       </div>
     </div>
