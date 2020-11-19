@@ -7,10 +7,10 @@ import Song from './components/Song';
 
 function App() {
   return (
-    <div className='app'>
+    <main>
       <Song />
       <Player />
-    </div>
+    </main>
   );
 }
 
