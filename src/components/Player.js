@@ -8,24 +8,24 @@ import {
 const Player = () => {
   return (
     <div className='player-container'>
-      <div className='time-control'>
+      <div className='time-controller'>
         <p>Start time</p>
         <input type='range' name='' id='' />
         <p>End time</p>
       </div>
-      <div className='play-control'>
+      <div className='play-controller'>
         <FontAwesomeIcon
-          className='play-control-previous'
+          className='play-controller-previous'
           icon={faChevronCircleLeft}
           size='2x'
         />
         <FontAwesomeIcon
-          className='play-control-play'
+          className='play-controller-play'
           icon={faPlayCircle}
           size='2x'
         />
         <FontAwesomeIcon
-          className='play-control-next'
+          className='play-controller-next'
           icon={faChevronCircleRight}
           size='2x'
         />
