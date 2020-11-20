@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faPlayCircle,
@@ -5,7 +6,13 @@ import {
   faChevronCircleLeft,
 } from '@fortawesome/free-solid-svg-icons';
 
-const Player = () => {
+const Player = ({ currentSong }) => {
+  // useRefs - selection html element
+  const audioRef = useRef(null);
+  // Event handlers
+  const playSongHandler = () => {
+    audioRef.current.play();
+  };
   return (
     <div className='player-container'>
       <div className='time-controller'>
@@ -15,21 +22,23 @@ const Player = () => {
       </div>
       <div className='play-controller'>
         <FontAwesomeIcon
-          className='icon play-controller-previous'
+          className='play-controller-previous'
           icon={faChevronCircleLeft}
           size='3x'
         />
         <FontAwesomeIcon
-          className='icon play-controller-play'
+          onClick={playSongHandler}
+          className='play-controller-play'
           icon={faPlayCircle}
           size='3x'
         />
         <FontAwesomeIcon
-          className='icon play-controller-next'
+          className='play-controller-next'
           icon={faChevronCircleRight}
           size='3x'
         />
       </div>
+      <audio ref={audioRef} src={currentSong.audio}></audio>
     </div>
   );
 };

@@ -19,7 +19,7 @@ function App() {
   return (
     <main>
       <Song currentSong={currentSong} />
-      <Player />
+      <Player currentSong={currentSong} />
     </main>
   );
 }
