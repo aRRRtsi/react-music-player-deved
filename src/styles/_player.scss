@@ -7,7 +7,16 @@
 
   .time-controller {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 80vw;
+    height: 50px;
+    padding: 1em;
+
+    p {
+      height: 100%;
+      padding: 0 1em;
+    }
 
     input[type='range'] {
       width: 100%;
@@ -97,16 +106,13 @@
     input[type='range']:focus::-ms-fill-upper {
       background: #7aa994;
     }
-
-    p {
-      padding: 1em;
-    }
   }
   .play-controller {
     display: flex;
     justify-content: space-around;
     width: 60vw;
     color: #7aa994;
+    padding: 1em;
   }
   svg {
     cursor: pointer;
