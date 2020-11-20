@@ -1,19 +1,19 @@
 .song-container {
-  height: 80vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   img {
-    max-width: 40vw;
+    max-width: 60vw;
     border-radius: 50%;
   }
   .song-name {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 600;
-    padding: 0.5em;
+    padding: 1em;
   }
   .song-artist {
-    font-size: 2em;
+    font-size: 1.4em;
   }
 }
