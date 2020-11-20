@@ -108,4 +108,11 @@
     width: 60vw;
     color: #7aa994;
   }
+  svg {
+    cursor: pointer;
+    transition: color ease-in 150ms;
+  }
+  svg:hover {
+    color: rgba(122, 169, 148, 0.6);
+  }
 }

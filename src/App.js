@@ -16,10 +16,16 @@ function App() {
   const [songs, setSongs] = useState(data);
   // Selecting current song from Songs .json array
   const [currentSong, setCurrentSong] = useState(songs.Songs[0]);
+  // Play and pause
+  const [isPlaying, setIsPlaying] = useState(false);
   return (
     <main>
       <Song currentSong={currentSong} />
-      <Player currentSong={currentSong} />
+      <Player
+        currentSong={currentSong}
+        isPlaying={isPlaying}
+        setIsPlaying={setIsPlaying}
+      />
     </main>
   );
 }
